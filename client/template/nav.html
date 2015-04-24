@@ -1,0 +1,20 @@
+<template name="nav">
+	<div id="nav-contents">
+		<div id="control">
+		  <form class="newCard">
+			<input type="text" name="newCardTitle" class="input-medium" placeholder="Card Title" >
+		  </form>
+
+		  <form class="form-search">
+		    <div class="input-append">
+		      <input type="text" id="card-filter" class="input-medium search-query" placeholder="Filter" autofocus>
+		    </div>
+		  </form>
+		</div>
+    <ul>
+    	{{#each cards}}
+ 			  <div>{{> navCard}}</div>
+ 	  	{{/each}}
+	  </ul>
+	</div>
+</template>
