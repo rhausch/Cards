@@ -2,7 +2,7 @@ Template.nav.helpers({
   cards: function () {
       console.log(this);
     return Cards.find({});
-  },
+  }
 });
 
 Template.nav.events({
@@ -11,7 +11,8 @@ Template.nav.events({
         console.log(event.target.newCardTitle.value);
         Cards.insert({
             title: event.target.newCardTitle.value,
-            createdAt: new Date()
+            createdAt: new Date(),
+            open: false
         });
         event.target.newCardTitle.value = '';
         return false;

@@ -1,5 +1,8 @@
 /* Light pilfering from bootstrap */
 
+.strong {
+  font-weight: bold;
+}
 
 .nav > li > .view label, 
 .nav > li > .view button {
@@ -131,7 +134,7 @@ body {
 }
 
 #server-status label {
-  margin: 0px;
+  margin: 0;
 }
 
 #server-status.state-connected {
@@ -220,7 +223,7 @@ body {
 
 #collapse-control > i {
   position: absolute;
-  border: 0px;
+  border: 0;
   top: 50%;
 }
 

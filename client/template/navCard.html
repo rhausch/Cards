@@ -1,6 +1,8 @@
 <template name="navCard">
     <div class="view">
-        <label class="cardSelector">{{title}}</label>
+        <label class="cardSelector {{#if open}}strong{{/if}}">
+            {{title}}
+        </label>
         <button class="destroy close">X</button>
     </div>
 </template>
